@@ -3,10 +3,15 @@ function setup() {
 }
 
 function draw()  {
-    background("yellow");
-    fill("#CC9E52")
+    background("#979A9Ae");
+    fill("Brown")
     noStroke();
     ellipse(320,200,300,300); // face
+
+    fill("Black")
+   ellipse(235,175,40,50)
+      ellipse(395,175,40,50)
+    
     
     fill("white")
     ellipse(235,175,40,50)
