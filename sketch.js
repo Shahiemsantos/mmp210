@@ -13,8 +13,8 @@ function draw()  {
       ellipse(395,175,50,50)
     
           fill("black")
-    ellipse(235,175,30,50)
-      ellipse(395,175,30,50)
+    ellipse(235,175,30,30)
+      ellipse(395,175,30,30)
     
     
     
