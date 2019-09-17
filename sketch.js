@@ -8,13 +8,14 @@ function draw()  {
     noStroke();
     ellipse(320,200,300,300); // face
     
-      fill("black")
-    ellipse(235,175,30,50)
-      ellipse(395,175,30,50)
-    
     fill("white")
     ellipse(235,175,50,50)
       ellipse(395,175,50,50)
+    
+          fill("black")
+    ellipse(235,175,30,50)
+      ellipse(395,175,30,50)
+    
     
     
     stroke("Black");
