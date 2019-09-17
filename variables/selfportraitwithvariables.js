@@ -1,3 +1,9 @@
+/* self porteait with variables */
+
+var x = 320
+var y = 200
+var facesize = 400;
+    
 function setup() {
     createCanvas(640,360);
 }
@@ -6,15 +12,19 @@ function draw()  {
     background("yellow");
     fill("#CC9E52")
     noStroke();
-    ellipse(320,200,300,300); // face
+    ellipse(x,y,facesize, facesize/2); // face
     
     fill("white")
-    ellipse(235,175,50,50)
-      ellipse(395,175,50,50)
+    ellipse(x-85,y-25,
+        facesize/8,facesize/8)
+    ellipse(x+75,y-25,
+        facesize/8,facesize/8)
     
           fill("black")
-    ellipse(235,175,30,30)
-      ellipse(395,175,30,30)
+    ellipse(x-85,y-25,
+            facesize/13,facesize/13)
+      ellipse(x+75,y-25,
+            facesize/13,facesize/13)
     
     
     
