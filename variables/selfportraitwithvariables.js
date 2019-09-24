@@ -14,12 +14,14 @@ function draw()  {
     noStroke();
     ellipse(x,y,facesize, facesize/2); // face
     
+    //eyes
     fill("white")
     ellipse(x-85,y-25,
         facesize/8,facesize/8)
     ellipse(x+75,y-25,
         facesize/8,facesize/8)
     
+    //pupil
           fill("black")
     ellipse(x-85,y-25,
             facesize/13,facesize/13)
@@ -32,13 +34,15 @@ function draw()  {
     fill(0,125)
     strokeWeight(5);
 
+    //Glass
     rect(190,150,100,60); // left lens
     rect(350,150,100,60); // right lens
     
-    
+    //Mouth
     fill("White")
     arc(320,300,80,80,0,PI);
     
+    //Feet
     fill("black")
      ellipse(x-75,y+150,
         facesize/4,facesize/4)
