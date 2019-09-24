@@ -38,4 +38,11 @@ function draw()  {
     
     fill("White")
     arc(320,300,80,80,0,PI);
+    
+    fill("black")
+     ellipse(x-75,y+150,
+        facesize/4,facesize/4)
+    ellipse(x+75,y+150,
+        facesize/4,facesize/4)
 }
+
