@@ -18,10 +18,18 @@ function draw() {
     var b = mouseY
     fill(r, g, b)
     rotateY(mouseX / 100);
-    fill("green")
-    sphere(100, 200, 200);
+    rect(30, 20, x - 55 + frameCount * 2, 25);
+    fill(g, r, b)
+    rect(30, 60, x - 55 + frameCount * 2, 25);
+    fill(b, r, g)
+    rect(30, -30, x - 55 + frameCount * 2, 25);
+    fill(r, b, g)
+rect(30, -80, x - 55 + frameCount * 2, 25);
+
 
     fill("red")
-    sphere(100);
+    sphere(100 + frameCount / 5);
+
+    cam.move(0, 0, frameCount / 1000);
 
 }
