@@ -10,7 +10,7 @@ function setup() {
 
 function draw() {
     background(300);
-    var r = 0
+    var r = 100
     var g = mouseX
     var b = mouseY
     fill(r, g, b)
@@ -18,20 +18,21 @@ function draw() {
 
     fill("red");
     sphere(100);
+
 	
-	 fill(r, b, g)
+	 fill(r, b, g);
 	 rotateY(mouseX / 100);
-	 translate(-150, -50, 100);
+	 translate(150, 0, 100);
     sphere(50);
-	translate(-100, 0, 100);
+	translate(100, 0, 0);
     sphere(50);
-	translate(100, 50, 100);
+	translate(100, 0, 0);
     sphere(50);
-    translate(50, 100, 100);
+    translate(100, 0, 0);
     sphere(50);
 
 }
 	function mousePressed(){
-
+    sphere(100);
 		
 	}
