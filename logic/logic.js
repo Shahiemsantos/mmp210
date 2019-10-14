@@ -26,9 +26,17 @@ function draw()  {
 	
      if( mouseX > width / 2) {
         image ( ozmaldo, 0, 0, width, height);
+        textSize(100);
+		 textAlign( CENTER)
+		fill("red");
+		 text("I'm all out of treats", 200, 300);
     }
 	
 	if( mouseIsPressed && Ozmaldo) {
 		image (klaus, 0, 0, width, height);
+		textSize(100);
+		 textAlign( CENTER)
+		fill("sky blue");
+		 text("Guess you're getting these hands", 200, 100)
 	}
 }
