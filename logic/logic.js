@@ -4,6 +4,7 @@ function preload() {
     img=loadImage("ozmaldo.jpg");
     ozmaldo=loadImage("ozmaldo2.jpg");
     klaus=loadImage("klaus.jpg")
+	
 }
 
 function setup() {
