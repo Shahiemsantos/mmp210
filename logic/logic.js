@@ -20,23 +20,23 @@ function draw()  {
 		 textSize(100);
 		 textAlign( CENTER)
 		fill("red");
-		 text("Sorry kid", 200, 300);
+		 text("Sorry kid", 200, 350);
 		
     }
 	
      if( mouseX > width / 2) {
         image ( ozmaldo, 0, 0, width, height);
-        textSize(100);
+        textSize(50);
 		 textAlign( CENTER)
 		fill("red");
-		 text("I'm all out of treats", 200, 300);
+		 text("I'm all out of treats", 200, 350);
     }
 	
-	if( mouseIsPressed && Ozmaldo) {
+	if( mouseIsPressed && mouseX > width / 2) {
 		image (klaus, 0, 0, width, height);
-		textSize(100);
+		textSize(20);
 		 textAlign( CENTER)
 		fill("sky blue");
-		 text("Guess you're getting these hands", 200, 100)
+		 text("Guess you're getting these hands", 200, 350)
 	}
 }
