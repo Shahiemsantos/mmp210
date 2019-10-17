@@ -39,7 +39,7 @@ function draw()  {
 		image (klaus, 0, 0, width, height);
 		textSize(20);
 		 textAlign( CENTER)
-		fill("sky blue");
+		fill("skyBlue");
 		 text("Guess you're getting these hands", 200, 350)
 	}
 }
