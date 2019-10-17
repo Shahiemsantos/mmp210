@@ -1,10 +1,12 @@
 var img, ozmaldo, klaus;
+var gif_loadImg, gif_createImg;
 
 function preload() {
     img=loadImage("ozmaldo.jpg");
     ozmaldo=loadImage("ozmaldo2.jpg");
-    klaus=loadImage("klaus.jpg")
-	
+    klaus=loadImage("klaus.jpg");
+  gif_loadImg = loadImage("klaus.gif");
+  gif_createImg = createImg("klaus.gif");
 }
 
 function setup() {
