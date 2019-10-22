@@ -1,6 +1,6 @@
 var r = 0;
-var g = 100;
-var b = 100;
+var g = 0;
+var b = 0;
 var img;
 var x = 220;
 var y = 50;
@@ -14,6 +14,7 @@ function preload() {
 
 function setup() {
 	createCanvas(640, 360);
+    translate(220, 180);
 
 }
 
@@ -30,27 +31,27 @@ function draw() {
 	x += random(xSpeedMin, xSpeedMax);
 	y += random(-5, 5);
 	
-	if (x > width) {
+	if (x > 500) {
 		xSpeedMax = 2;
 		xSpeedMin = -5;
 	}
 	
-	if (x < 0) {
+	if (x <100) {
 		xSpeedMin = -2;
 		xSpeedMax = 5;
 	}
 	
-	if (y > height) {
+	if (y > 200) {
 		ySpeedMax = 2;
 		ySpeedMin = -5;
 	}
 	
-	if (y < 0) {
+	if (y < 300) {
 		ySpeedMin = -2
 		ySpeedMax = 5
 	}
 
 
-	image(img, x, y, 150);
+	image(img, x, y, 100, 200);
 
 }
