@@ -14,8 +14,9 @@ function preload() {
 
 function setup() {
 	createCanvas(640, 360);
-    translate(220, 180);
-
+    background(r, g, b);
+     translate(width / 2, height / 2);
+   
 }
 
 function draw() {
@@ -32,22 +33,22 @@ function draw() {
 	y += random(-5, 5);
 	
 	if (x > 500) {
-		xSpeedMax = 2;
+		xSpeedMax = 3;
 		xSpeedMin = -5;
 	}
 	
 	if (x <100) {
-		xSpeedMin = -2;
+		xSpeedMin = -3;
 		xSpeedMax = 5;
 	}
 	
 	if (y > 200) {
-		ySpeedMax = 2;
+		ySpeedMax = 3;
 		ySpeedMin = -5;
 	}
 	
-	if (y < 300) {
-		ySpeedMin = -2
+	if (y < 250) {
+		ySpeedMin = -3
 		ySpeedMax = 5
 	}
 
