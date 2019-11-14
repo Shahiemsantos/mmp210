@@ -1,7 +1,4 @@
-const int analogInPin = A0; 
-const int analogOutPin = 9; 
-int sensorValue = 0;       
-int outputValue = 0; 
+
 
 void setup() {
   // put your setup code here, to run once:
