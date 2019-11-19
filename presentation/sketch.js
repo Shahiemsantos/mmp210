@@ -25,9 +25,7 @@ function draw() {
 	background(100);
 
 	if (slideNumber == 0) {
-		...
 	} else if (slideNumber == 5) {
-		...
 	}
 
 	fill(255);
