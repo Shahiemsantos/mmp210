@@ -13,7 +13,7 @@ function draw()  {
 	background ("yellow")
     
 	
-        image (img, 0, 0 , width, height);
+        image(img, 0, 0, width, height);
 		 textSize(20);
 		 textAlign( CENTER)
 		fill("white");

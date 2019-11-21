@@ -17,15 +17,43 @@ var prevBtnY = 500;
 var prevBtnW = 100;
 var prevBtnH = 50;
 
+var img;
+
+function preload() {
+	img = loadImage("stage.png");
+}
+
 function setup() {
 	createCanvas(800, 600);
 }
 
 function draw() {
 	background(100);
+	image(img, 0, 0, width, height);
 
 	if (slideNumber == 0) {
-	} else if (slideNumber == 5) {
+		fill(255);
+		textSize(50)
+		text("Slide 1", 350, 100);
+	} else if (slideNumber == 1) {
+		fill(255);
+		textSize(50)
+		text("Slide 2", 350, 100)
+	} 
+	else if (slideNumber == 2) {
+		fill(255);
+		textSize(50)
+		text("Slide 3", 350, 100)
+	}
+	else if (slideNumber == 3) {
+		fill(255);
+		textSize(50)
+		text("Slide 4", 350, 100)
+	}
+	else if (slideNumber == 4) {
+		fill(255);
+		textSize(50)
+		text("Slide 5", 350, 100)
 	}
 
 	fill(255);
@@ -35,20 +63,30 @@ function draw() {
 	textSize(20);
 	textAlign(CENTER, CENTER);
 	text("Next", nextBtnX, nextBtnY);
-		
-		fill(255);
+
+	fill(255);
 	noStroke();
 	rect(prevBtnX, prevBtnY, prevBtnW, prevBtnH);
 	fill(0);
 	textSize(20);
-	textAlign(CENTER, CENTER);
-	text("previous", )
+	textAlign(LEFT, TOP);
+	text("previous", prevBtnX + 10, prevBtnY + 10);
 
 }
 
 function mousePressed() {
 	var d = dist(mouseX, mouseY, nextBtnX, nextBtnY);
+	console.log(d);
 	if (d < nextBtnSize / 2 && slideNumber < totalSlides - 1) {
 		slideNumber++;
+	}
+
+	if (mouseX > prevBtnX &&
+		mouseX < prevBtnX + prevBtnW &&
+		mouseY > prevBtnY && 
+		mouseY < prevBtnY + prevBtnH &&
+		slideNumber > 0) {
+		slideNumber--;
+
 	}
 }
