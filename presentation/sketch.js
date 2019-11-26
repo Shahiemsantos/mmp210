@@ -17,10 +17,11 @@ var prevBtnY = 500;
 var prevBtnW = 100;
 var prevBtnH = 50;
 
-var img;
+var img, ryum;
 
 function preload() {
 	img = loadImage("stage.png");
+	img = loadImage("ryumove.png");
 }
 
 function setup() {
@@ -39,6 +40,7 @@ function draw() {
 		fill(255);
 		textSize(50)
 		text("Slide 2", 350, 100)
+		image(ryum, mouseX, 400, 100, 100)
 	} 
 	else if (slideNumber == 2) {
 		fill(255);
