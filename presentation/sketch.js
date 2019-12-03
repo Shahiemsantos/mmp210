@@ -22,6 +22,9 @@ var img, ryum;
 function preload() {
 	img = loadImage("stage.png");
 	ryum = loadImage("ryumove.png");
+	ryus = loadImage("ryustance.png");
+	ryup = loadImage("ryupunch.png");
+	ryuk = loadImage("ryukick.png");
 }
 
 function setup() {
@@ -36,15 +39,30 @@ function draw() {
 		fill(255);
 		textSize(50);
 		text("Slide 1", 350, 100);
+		image(ryum, mouseX, 300, 200, 250);
+
 	} else if (slideNumber == 1) {
 		fill(255);
 		textSize(50);
 		text("Slide 2", 350, 100);
-		image(ryum, mouseX, 400, 100, 100);
+
+		if (mouseIsPressed) {
+			image(ryup, mouseX, 300, 200, 250);
+		} else {
+			image(ryus, mouseX, 300, 200, 250);
+		}
+
+
 	} else if (slideNumber == 2) {
 		fill(255);
 		textSize(50);
 		text("Slide 3", 350, 100);
+
+		if (mouseIsPressed) {
+			image(ryuk, mouseX, 300, 200, 250);
+		} else {
+			image(ryum, mouseX, 300, 200, 250);
+		}
 	} else if (slideNumber == 3) {
 		fill(255);
 		textSize(50);
@@ -89,3 +107,5 @@ function mousePressed() {
 
 	}
 }
+
+function keypressed(key, keycode) {}
