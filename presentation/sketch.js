@@ -21,7 +21,7 @@ var img, ryum;
 
 function preload() {
 	img = loadImage("stage.png");
-	img = loadImage("ryumove.png");
+	ryum = loadImage("ryumove.png");
 }
 
 function setup() {
@@ -34,28 +34,25 @@ function draw() {
 
 	if (slideNumber == 0) {
 		fill(255);
-		textSize(50)
+		textSize(50);
 		text("Slide 1", 350, 100);
 	} else if (slideNumber == 1) {
 		fill(255);
-		textSize(50)
-		text("Slide 2", 350, 100)
-		image(ryum, mouseX, 400, 100, 100)
-	} 
-	else if (slideNumber == 2) {
+		textSize(50);
+		text("Slide 2", 350, 100);
+		image(ryum, mouseX, 400, 100, 100);
+	} else if (slideNumber == 2) {
 		fill(255);
-		textSize(50)
-		text("Slide 3", 350, 100)
-	}
-	else if (slideNumber == 3) {
+		textSize(50);
+		text("Slide 3", 350, 100);
+	} else if (slideNumber == 3) {
 		fill(255);
-		textSize(50)
-		text("Slide 4", 350, 100)
-	}
-	else if (slideNumber == 4) {
+		textSize(50);
+		text("Slide 4", 350, 100);
+	} else if (slideNumber == 4) {
 		fill(255);
-		textSize(50)
-		text("Slide 5", 350, 100)
+		textSize(50);
+		text("Slide 5", 350, 100);
 	}
 
 	fill(255);
@@ -85,7 +82,7 @@ function mousePressed() {
 
 	if (mouseX > prevBtnX &&
 		mouseX < prevBtnX + prevBtnW &&
-		mouseY > prevBtnY && 
+		mouseY > prevBtnY &&
 		mouseY < prevBtnY + prevBtnH &&
 		slideNumber > 0) {
 		slideNumber--;
