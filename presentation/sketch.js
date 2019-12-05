@@ -44,7 +44,7 @@ function draw() {
 	} else if (slideNumber == 1) {
 		fill(255);
 		textSize(50);
-		text("Slide 2", 350, 100);
+		text("Slide 2 click to attack", 350, 100);
 
 		if (mouseIsPressed) {
 			image(ryup, mouseX, 300, 200, 250);
@@ -56,7 +56,7 @@ function draw() {
 	} else if (slideNumber == 2) {
 		fill(255);
 		textSize(50);
-		text("Slide 3", 350, 100);
+		text("Slide 3 click to attack", 350, 100);
 
 		if (mouseIsPressed) {
 			image(ryuk, mouseX, 300, 200, 250);
