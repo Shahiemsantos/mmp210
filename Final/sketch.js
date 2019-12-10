@@ -35,21 +35,45 @@ function draw() {
 	background(100);
 	image(img, 0, 0, width, height);
 
-	if (keyIsPressed) {
-		if (keyCode == 80) {
-			image(ryup, mouseX, 300, 200, 250);
-		} else{image(ryus, mouseX, 300, 200, 250);}
-		if (keyCode == 75) {
-			image(ryuk, mouseX, 300, 200, 250);
-		} else{image(ryus, mouseX, 300, 200, 250);}
-		if (keyCode == 66) {
-			image(ryub, 200, 300, 200, 250)
-			image(ryuh, mouseX, 300, 150 + mouseX, 100 + mouseY);
-		} else{image(ryus, mouseX, 300, 200, 250);}
-		if (keyCode == 72) {
+	if (serialAvailable) {
+		if (button1 == 1) {
+			image(ryup, sensorValue, 300, 200, 250);
+
+		}
+		if (button2 == 1) {
+			image(ryuk, sensorValue, 300, 200, 250);
+		}
+		if (button3 == 1) {
 			image(aku, 0, 0, width, height);
+		}
+		if (button1 &&button2 ==1){image(ryub, 200, 300, 200, 250)
+				imageMode(CENTER)
+				image(ryuh, sensorValue, 400, sensorValue, sensorValue);
+				imageMode(CORNER)}
+	}else {
+			image(ryus, sensorValue, 300, 200, 250) else {
+
+
+
+
+		if (keyIsPressed) {
+			if (keyCode == 80) {
+				image(ryup, mouseX, 300, 200, 250);
+			}
+			if (keyCode == 75) {
+				image(ryuk, mouseX, 300, 200, 250);
+			}
+			if (keyCode == 66) {
+				image(ryub, 200, 300, 200, 250)
+				imageMode(CENTER)
+				image(ryuh, mouseX, 400, mouseX, mouseY);
+				imageMode(CORNER)
+			}
+			if (keyCode == 72) {
+				image(aku, 0, 0, width, height);
+			}
 		} else {
-			image(ryus, mouseX, 300, 200, 250);
+			image(ryus, mouseX, 300, 200, 250)
 		}
 	}
 }
