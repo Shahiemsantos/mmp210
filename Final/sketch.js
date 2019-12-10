@@ -33,11 +33,22 @@ function setup() {
 function draw() {
     background(100);
     image(img, 0, 0, width, height);
-    image(ryus, mouseX, 300, 200, 250);
+    image(ryus, sensorValue, 300, 200, 250);
 
 }
 
-function keypressed(key, keycode) {}
+function keypressed(key, keyCode) {
+    if (keyCode == 80) {
+        image(ryup, sensorValue, 300, 200, 250);
+    } 
+    if (keyCode == 75) {
+        image(ryuk, sensorValue, 300, 200, 250);
+    }
+    if (keyCode == 75 && 80) {
+        image(ryub, sensorValue, 300, 200, 250) &&
+        image(hadoken, sensorValue + 5, 300, sensorValue, sensorValue)
+    }
+}
 
 function serverConnected() {
     console.log('connected to server.');
