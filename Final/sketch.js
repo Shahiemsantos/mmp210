@@ -46,7 +46,10 @@ function keypressed(key, keyCode) {
     }
     if (keyCode == 75 && 80) {
         image(ryub, sensorValue, 300, 200, 250) &&
-        image(hadoken, sensorValue + 5, 300, sensorValue, sensorValue)
+        image(hadoken, sensorValue + 5, 300, sensorValue, sensorValue);
+    }
+    if(keyCode == 72) {
+        image(aku, 400, 300, 400, height);
     }
 }
 
