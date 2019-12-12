@@ -22,7 +22,15 @@ void loop() {
   buttonState2 = digitalRead(buttonPin2);
   buttonState3 = digitalRead(buttonPin3);
   
-int sensorValue = analogRead(A0);
-Serial.println(sensorValue);
-delay(10);
+  int sensorValue = analogRead(A0);
+  Serial.print(sensorValue);
+  Serial.print(',');
+  Serial.print(buttonState);
+  Serial.print(',');
+  Serial.print(buttonState2);
+  
+  Serial.print(',');
+  Serial.println(buttonState3);
+
+  delay(10);
 }

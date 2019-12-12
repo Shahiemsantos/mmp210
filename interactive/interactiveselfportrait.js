@@ -1,4 +1,4 @@
-/* self porteait with variables */
+g/* self porteait with variables */
 
 var x = 320;
 var y = 200;
