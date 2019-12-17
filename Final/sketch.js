@@ -1,7 +1,7 @@
 var currentString;
 var serial;
 var serialAvailable;
-var portName = "COM3";
+var portName = "COM5";
 var sensorValue;
 var button1 = 0;
 var button2 = 0;
@@ -31,7 +31,7 @@ function setup() {
 	serial.on('error', serialError);
 	serial.on('close', portClose);
 
-	serial.open("COM3");
+	serial.open("COM5");
 }
 
 function draw() {
